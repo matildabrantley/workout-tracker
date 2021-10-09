@@ -8,8 +8,8 @@ router.post('/api/workouts', (req, res) => {
     .then((db) => {
       res.json(db);
     })
-    .catch((err) => {
-      res.json(err);
+    .catch((error) => {
+      res.json(error);
     });
 });
 
@@ -24,8 +24,8 @@ router.put('/api/workouts/:id', ({ body, params }, res) => {
       .then((dbWorkout) => {
         res.json(dbWorkout);
       })
-      .catch((err) => {
-        res.json(err);
+      .catch((error) => {
+        res.json(error);
       });
   });
 
@@ -43,8 +43,18 @@ router.get('/api/workouts', (req, res) => {
       .then((db) => {
         res.json(db);
       })
-      .catch((err) => {
-        res.json(err);
+      .catch((error) => {
+        res.json(error);
+      });
+  });
+
+  router.delete('/api/workouts', ({ body }, res) => {
+    models.Workout.findByIdAndDelete(body.id)
+      .then(() => {
+        res.json(true);
+      })
+      .catch((error) => {
+        res.json(error);
       });
   });
 

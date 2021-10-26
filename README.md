@@ -8,4 +8,4 @@ Summary -
 ## Features Under Work
    
 ## Screenshot
-![Screenshot]()
+![Screenshot](dashboard.jpg)

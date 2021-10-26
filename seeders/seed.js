@@ -85,6 +85,32 @@ const workoutSeed = [
     ],
   },
   {
+    day: new Date(new Date().setDate(new Date().getDate() - 4)),
+    exercises: [
+      {
+        type: 'resistance',
+        name: 'Resistance Bands',
+        duration: 20,
+        weight: 100,
+        reps: 10,
+        sets: 8,
+      },
+    ],
+  },
+  {
+    day: new Date(new Date().setDate(new Date().getDate() - 4)),
+    exercises: [
+      {
+        type: 'resistance',
+        name: 'Medicine Balls',
+        duration: 20,
+        weight: 100,
+        reps: 6,
+        sets: 10,
+      },
+    ],
+  },
+  {
     day: new Date(new Date().setDate(new Date().getDate() - 3)),
     exercises: [
       {

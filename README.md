@@ -8,4 +8,6 @@ Summary -
 ## Features Under Work
    
 ## Screenshot
-![Screenshot](dashboard.jpg)
+![Screenshot: Mobile](screenshot.png)
+![Screenshot: Add Exercise](screenshot2.png)
+![Screenshot: Charts](screenshot3.png)
